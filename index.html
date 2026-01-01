@@ -122,16 +122,17 @@ body {
 
 /* TEXT LINES - APPEAR INSTANTLY AND STAY */
 .text-line {
-  display: block;
+  width: 100%;                /* 🔑 take full container width */
+  text-align: center;         /* 🔑 center text inside that width */
+
   font-size: 1.2em;
   line-height: 1.4;
   color: #e17055;
   font-weight: 500;
   font-family: 'Comic Neue', cursive;
 
-  text-align: center;      /* ✅ center text */
-  padding-left: 0;         /* ✅ remove forced offset */
   margin-bottom: 15px;
+  padding-left: 0;            /* ❌ remove offset */
 
   text-shadow: 0 3px 6px rgba(255,255,255,0.7);
 
@@ -1608,6 +1609,7 @@ setTimeout(() => {
 </script>
 </body>
 </html>
+
 
 
 
