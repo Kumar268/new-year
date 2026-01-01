@@ -164,21 +164,32 @@ body {
 
 /* SIGNATURE */
 .signature {
-  margin-top: 40px;
-  font-size: 2em;
+  margin-top: 18px;            /* reduced spacing */
+  font-size: 1.3em;            /* smaller, calmer */
   font-family: 'Pacifico', cursive;
-  font-weight: 700;
-  background: linear-gradient(135deg, #e17055, #ffd23f, #ff6b9d, #e17055);
+  font-weight: 600;            /* slightly lighter */
+
+  background: linear-gradient(
+    135deg,
+    #e17055,
+    #ffd23f,
+    #ff6b9d,
+    #e17055
+  );
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 8px 16px rgba(255,152,139,0.5);
+
+  text-shadow: 0 4px 8px rgba(255,152,139,0.35); /* softer shadow */
+
   position: relative;
   z-index: 2;
+
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+
 
 .text-container.show .signature {
   opacity: 1;
@@ -1594,5 +1605,6 @@ setTimeout(() => {
 </script>
 </body>
 </html>
+
 
 
