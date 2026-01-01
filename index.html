@@ -127,16 +127,19 @@ body {
   line-height: 1.4;
   color: #e17055;
   font-weight: 500;
-  text-shadow: 0 3px 6px rgba(255,255,255,0.7);
   font-family: 'Comic Neue', cursive;
+
+  text-align: center;      /* ✅ center text */
+  padding-left: 0;         /* ✅ remove forced offset */
   margin-bottom: 15px;
 
-  padding-left: 10ch;   /* ← leaves space of ~10 characters */
+  text-shadow: 0 3px 6px rgba(255,255,255,0.7);
 
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
 
 
 .text-container.show .text-line {
@@ -1605,6 +1608,7 @@ setTimeout(() => {
 </script>
 </body>
 </html>
+
 
 
 
